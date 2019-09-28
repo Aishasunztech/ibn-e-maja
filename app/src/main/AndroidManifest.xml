@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sunztech.ibnemaja">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:name="com.sunztech.ibnemaja.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id"/>
+
+        <activity android:name="com.sunztech.ibnemaja.BookMarkActivity"/>
+        <activity android:name="com.sunztech.ibnemaja.HadithDetailsActivity" />
+        <activity android:name="com.sunztech.ibnemaja.ChapterDetailsActivity" />
+        <activity android:name="com.sunztech.ibnemaja.BookDetailsActivity" />
+        <activity android:name="com.sunztech.ibnemaja.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
